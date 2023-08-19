@@ -112,6 +112,7 @@ input[type="text"]{
 input[type="text"]::placeholder {
   font-size: 18px;
   text-align: center;
+  cursor: text; 
 }
 
 button[type="submit"] {
