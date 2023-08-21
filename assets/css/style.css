@@ -80,7 +80,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #1acc8d;
+  background: #cae9ff;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -89,7 +89,7 @@ h6 {
 
 .back-to-top i {
   font-size: 28px;
-  color: #fff;
+  color: #010483;
   line-height: 0;
 }
 
@@ -129,7 +129,21 @@ h6 {
 
 #header.header-scrolled {
   background: rgba(1, 4, 136, 0.9);
-  height: 60px;
+  height: 60px; 
+}
+
+#header.header-scrolled a{
+  color: #fff; 
+}
+
+#header.header-scrolled a:hover{
+  color: #010483; 
+  background: #cae9ff;
+}
+
+#header.header-scrolled .navbar a.active{
+  color: #010483; 
+  background: #cae9ff;
 }
 
 #header .logo h1 {
@@ -144,6 +158,9 @@ h6 {
 #header .logo h1 a:hover {
   color: #fff;
   text-decoration: none;
+  background: rgba(1, 4, 136, 0.9);
+  padding: 10px;
+  border-radius: 30px;
 }
 
 #header .logo img {
@@ -183,7 +200,7 @@ h6 {
   font-size: 15px;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
-  color: rgba(255, 255, 255, 0.7);
+  color: #010483;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -211,7 +228,7 @@ h6 {
 .navbar a:hover:before,
 .navbar li:hover>a:before,
 .navbar .active:before {
-  visibility: visible;
+  visibility: invisible;
   width: 25px;
 }
 
@@ -220,6 +237,12 @@ h6 {
 .navbar .active:focus,
 .navbar li:hover>a {
   color: #fff;
+  border-color: #010483;
+  background: #010483;
+  border-radius: 30px;
+  padding-right: 15px;
+  padding-left: 15px;
+  
 }
 
 .navbar .dropdown ul {
@@ -419,7 +442,8 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(2, 5, 161, 0.91);
+  background: #cae9ff;
+/*  rgba(2, 5, 161, 0.91);*/
   position: absolute;
   bottom: 0;
   top: 0;
@@ -432,12 +456,14 @@ h6 {
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  color: rgba(255, 255, 255, 0.8);
+  color: #010483
+/*  rgba(255, 255, 255, 0.8);*/
 }
 
 #hero h1 span {
-  color: #fff;
-  border-bottom: 4px solid #1acc8d;
+  color: #990100;
+/*  #fff;*/
+/*  border-bottom: 4px solid #1acc8d;*/
 }
 
 #hero h2 {
@@ -449,7 +475,7 @@ h6 {
 #hero .btn-get-started {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 17px;
   margin-top: 30px;
   letter-spacing: 1px;
   display: inline-block;
@@ -457,11 +483,12 @@ h6 {
   border-radius: 50px;
   transition: 0.5s;
   color: #fff;
-  background: #1acc8d;
+  background: #010483;
+/*  #1acc8d;*/
 }
 
 #hero .btn-get-started:hover {
-  background: #17b57d;
+  background: #3772ff;
 }
 
 #hero .animated {
@@ -888,7 +915,7 @@ section {
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #1acc8d;
+  background: #010483;
   color: #fff;
 }
 
@@ -944,7 +971,7 @@ section {
 
 .contact .php-email-form input,
 .contact .php-email-form textarea {
-  border-radius: 0;
+  border-radius: 20px;
   box-shadow: none;
   font-size: 14px;
 }
@@ -958,7 +985,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #1acc8d;
+  background: #010483;
   border: 0;
   padding: 10px 30px;
   color: #fff;
@@ -967,7 +994,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #34e5a6;
+  background: #3772ff;
 }
 
 @keyframes animate-loading {
@@ -1026,6 +1053,8 @@ section {
   line-height: 1.5;
   appearance: none;
   border-radius: 30px;
+  border-width: 2px;
+  border-color: #010483;
 }
 
 .btn {
