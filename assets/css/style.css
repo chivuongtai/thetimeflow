@@ -974,6 +974,7 @@ section {
   border-radius: 20px;
   box-shadow: none;
   font-size: 14px;
+  width: 100%;
 }
 
 .contact .php-email-form input {
