@@ -511,6 +511,12 @@ h6 {
   font-size: 24px;
 }
 
+#hero .img-intro{
+  max-width: 150%;
+  text-align: center;
+  margin-left: -120px;
+}
+
 #hero .btn-get-started {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -553,8 +559,8 @@ h6 {
     text-align: center;
   }
 
-  #hero .hero-img img {
-    width: 100%;
+  #hero .hero-img img{
+    max-width: 100%
   }
 
   #hero h1 {
@@ -767,8 +773,9 @@ section {
   font-weight: 600;
   font-size: 40px;
   color: #010483;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  margin-top: -20px;
+/*  padding-bottom: 20px;*/
+/*  padding-top: -50px;*/
 }
 
 
@@ -789,7 +796,7 @@ section {
 }
 
 .details .content ul li {
-  padding-bottom: 10px;
+  padding-bottom: 0px;
 }
 
 .details .content ul i {
@@ -802,6 +809,21 @@ section {
   margin-bottom: 0;
 }
 
+.details .img1{
+  border-radius: 50px;
+  border: 5px solid #010483;
+  max-width: 75%;
+  margin: 50px;
+  box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.details .img2{
+  border-radius: 50px;
+  border: 5px solid #010483;
+  max-width: 70%;
+  margin: 50px;
+  box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.4)
+}
 
 /*--------------------------------------------------------------
 # Testimonials
