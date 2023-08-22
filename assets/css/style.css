@@ -80,11 +80,12 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #cae9ff;
+  background: #fff;
   width: 40px;
   height: 40px;
   border-radius: 50px;
   transition: all 0.4s;
+  border: 3px solid #010483;
 }
 
 .back-to-top i {
@@ -129,23 +130,46 @@ h6 {
 
 #header.header-scrolled {
   background: rgba(1, 4, 136, 0.9);
-  height: 60px; 
+  height: 70px; 
 }
 
 #header.header-scrolled a{
   color: #fff; 
+  border-radius: 30px;
 }
 
 #header.header-scrolled a:hover{
-  color: #010483; 
-  background: #cae9ff;
+  color: #fff; 
+  background: #010483;
+  border: 3px solid #fff;
 }
 
 #header.header-scrolled .navbar a.active{
-  color: #010483; 
-  background: #cae9ff;
+  color: #fff; 
+  background: #010483;
+  border: 3px solid #fff;
 }
 
+#header.header-scrolled .navbar .dropdown ul a {
+  color: #010483;
+}
+
+#header.header-scrolled .navbar .dropdown ul a:hover {
+  color: #fff;
+}
+
+#header.header-scrolled .logo h1 a{
+  background: invisible;
+}
+
+#header.header-scrolled .mobile-nav-toggle {
+  color: #fff;
+}
+
+/*#header.header-scrolled.navbar-mobile ul{
+  color: #010483;
+}
+*/
 #header .logo h1 {
   font-size: 28px;
   margin: 0;
@@ -158,9 +182,10 @@ h6 {
 #header .logo h1 a:hover {
   color: #fff;
   text-decoration: none;
-  background: rgba(1, 4, 136, 0.9);
+  background: #010483;
   padding: 10px;
   border-radius: 30px;
+  border: 3px solid #fff;
 }
 
 #header .logo img {
@@ -203,6 +228,8 @@ h6 {
   color: #010483;
   white-space: nowrap;
   transition: 0.3s;
+  border: 3px;
+  border-radius: 30px;
 }
 
 .navbar a i,
@@ -236,9 +263,9 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #fff;
-  border-color: #010483;
-  background: #010483;
+  color: #010483;
+  border: 3px solid #010483;
+/*  background: #010483;*/
   border-radius: 30px;
   padding-right: 15px;
   padding-left: 15px;
@@ -258,11 +285,11 @@ h6 {
   background: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
-  border-radius: 4px;
+  border-radius: 20px;
 }
 
 .navbar .dropdown ul li {
-  min-width: 200px;
+  min-width: 100px;
 }
 
 .navbar .dropdown ul a {
@@ -270,7 +297,9 @@ h6 {
   font-size: 14px;
   font-weight: 500;
   text-transform: none;
-  color: #01036f;
+  color: #010483;
+  border-radius: 30px;
+  border: 3px;
 }
 
 .navbar .dropdown ul a i {
@@ -280,7 +309,8 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #1acc8d;
+  color: #010483;
+  border: 3px solid #010483;
 }
 
 .navbar .dropdown:hover>ul {
@@ -316,7 +346,7 @@ h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #fff;
+  color: #010483;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -324,7 +354,7 @@ h6 {
   transition: 0.5s;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 900px) {
   .mobile-nav-toggle {
     display: block;
   }
@@ -354,16 +384,19 @@ h6 {
 
 .navbar-mobile ul {
   display: block;
+  max-width: 40%;
+  min-width: 30%;
   position: absolute;
   top: 55px;
   right: 15px;
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  border-radius: 8px;
+  border-radius: 10px;
   background-color: #fff;
   overflow-y: auto;
   transition: 0.3s;
+  left: 70%;
 }
 
 .navbar-mobile>ul>li>a:before {
@@ -388,6 +421,10 @@ h6 {
   margin: 15px;
 }
 
+.navbar-mobile .dropdown ul{
+  max-width: 100%;
+}
+
 .navbar-mobile .dropdown ul,
 .navbar-mobile .dropdown .dropdown ul {
   position: static;
@@ -403,7 +440,7 @@ h6 {
 
 .navbar-mobile .dropdown ul li,
 .navbar-mobile .dropdown .dropdown ul li {
-  min-width: 200px;
+  min-width: 30%;
 }
 
 .navbar-mobile .dropdown ul a,
@@ -422,7 +459,7 @@ h6 {
 .navbar-mobile .dropdown .dropdown ul a:hover,
 .navbar-mobile .dropdown .dropdown ul .active:hover,
 .navbar-mobile .dropdown .dropdown ul li:hover>a {
-  color: #1acc8d;
+  color: #010483;
 }
 
 .navbar-mobile .dropdown>.dropdown-active,
