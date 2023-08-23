@@ -239,6 +239,42 @@ h6 {
   position: relative;
 }
 
+.navbar li .top-up-box{
+  position: relative;
+  display: inline-block;
+}
+
+.navbar li .top-up-box a:after{
+  content: "";
+  visibility: hidden;
+  width: 160px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.navbar li .top-up-box a:focus:after{
+  visibility: visible;
+  opacity: 1;
+}
+
+=====================
+
+=================
+
+.navbar li .top-up-box:hover .tool-tip{
+  visibility: visible;
+  opacity: 1;
+}
 
 .navbar a,
 .navbar a:focus {
@@ -437,7 +473,8 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #010483;
+  color: #fff!important;
+  background: #010351;
 }
 
 .navbar-mobile .getstarted,
@@ -483,7 +520,8 @@ h6 {
 .navbar-mobile .dropdown .dropdown ul a:hover,
 .navbar-mobile .dropdown .dropdown ul .active:hover,
 .navbar-mobile .dropdown .dropdown ul li:hover>a {
-  color: #010483;
+  color: #010483!important;
+  background: none;
 }
 
 .navbar-mobile .dropdown>.dropdown-active,

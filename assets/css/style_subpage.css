@@ -393,6 +393,7 @@ h6 {
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
   color: #fff!important;
+  background: #010351;
 }
 
 .navbar-mobile .getstarted,
@@ -438,7 +439,7 @@ h6 {
 .navbar-mobile .dropdown .dropdown ul a:hover,
 .navbar-mobile .dropdown .dropdown ul .active:hover,
 .navbar-mobile .dropdown .dropdown ul li:hover>a {
-  color: #010483;
+  color: #010483!important;
 }
 
 .navbar-mobile .dropdown>.dropdown-active,
