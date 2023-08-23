@@ -363,6 +363,10 @@ h6 {
   border: 2px;
 }
 
+.navbar .dropdown ul a:hover {
+  color: #010483!important;
+}
+
 .navbar .dropdown ul a i {
   font-size: 12px;
 }
@@ -371,7 +375,6 @@ h6 {
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
   color: #008CF8;
-/*  border: 3px solid #010483;*/
 }
 
 .navbar .dropdown:hover >ul{
