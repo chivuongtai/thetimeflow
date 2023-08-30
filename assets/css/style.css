@@ -14,6 +14,10 @@ body {
   color: #444444;
 }
 
+main{
+  flex: 1 0 auto;
+}
+
 a {
   color: #1acc8d;
   text-decoration: none;
@@ -95,7 +99,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #2be4a2;
+  background: #cae9ff;
   color: #fff;
 }
 
