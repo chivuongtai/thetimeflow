@@ -1136,12 +1136,11 @@
   :root {
     --numDots: 8;
     --parentWidthBase: 1;
-    --parentWidth: calc(var(--parentWidthBase) * 70vw);
+    --parentWidth: calc(var(--parentWidthBase) * 80vw);
     --parentMaxWidth: 1000px;
     --dotWidth: 30px;
-    --dotWidthSm: 17px;
-    --active: #2C3E50;
-    --inactive: #AEB6BF;
+    --active: #AEB6BF ;
+    --inactive: #010483; //#2C3E50
   }
   
   main {
@@ -1202,23 +1201,23 @@
     cursor: pointer;
   }
   
-  main .main-info::before,
+  // main .main-info::before,
   main .main-info::after,
-  main .input::before,
-  main .input::after {
+  // main .input::before,
+  main .input::before {
     content: "";
     display: block;
     position: absolute;
     z-index: -1;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #2C3E50;
+    background-color: var(--active);
     height: 5px;
-    width: calc(1.2*var(--parentWidth) / var(--numDots));
-    max-width: calc(1.2*var(--parentWidth) / var(--numDots));
+    width: calc(var(--parentWidth) / var(--numDots));
+    max-width: calc(var(--parentWidth) / var(--numDots));
   }
   
-  main .input.active 
+  main .input.active,
   main .input.active::before{
     background-color: var(--active);
   }
@@ -1237,18 +1236,18 @@
   }
 
   main .input span::before {
-    color: #010483;
+    color: var(--active); //#010483
     font-size: 20px;
   }
   
   main .input span::after {
-    color: #010483;
+    color: var(--active); //#010483;
     font-size: 20px;
   }
   
-  main .input.active ~ .input,
-  main .input.active ~ .input::before,
-  main .input.active ~ .input::after {
+  main .input.active{
+  // main .input.active ~ .input::before,
+  // main .input.active ~ .input::after {
     background-color: var(--inactive);
   }
   
@@ -1279,6 +1278,7 @@
     top: 25px;
     transform: translateX(-50%);
     font-size: 17px;
+    // background-color: #008CF8;
   }
   
   main .main-info span::before{
@@ -1294,9 +1294,32 @@
   main .input span::before {
     content: attr(data-info);
     text-align: center;
-    top: -80px;
+    top: -90px;
     width: 100px;
     transform: translateX(-50%) rotateZ(0deg);
     font-size: 17px;
     text-indent: -10px;
+    // background-color: #008CF8;
+    // height: 100px
+  }
+
+  main .input.active span::before {
+    content: attr(data-info);
+    text-align: center;
+    color: var(--inactive);
+    top: -90px;
+    width: 100px;
+    transform: translateX(-50%) rotateZ(0deg);
+    font-size: 17px;
+    text-indent: -10px;
+  }
+
+  main .input.active span::after {
+    content: attr(data-year);
+    text-align: center;
+    color: var(--inactive);
+    width: 100px;
+    top: 25px;
+    transform: translateX(-50%);
+    font-size: 17px;
   }
